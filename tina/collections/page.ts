@@ -3,7 +3,7 @@ import type { Collection } from "tinacms";
 export const PageCollection: Collection = {
 	name: "page",
 	label: "Page",
-	path: "content/pages",
+	path: "pages",
 	format: "md",
 	fields: [
 		{
