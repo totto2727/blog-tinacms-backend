@@ -1,3 +1,6 @@
 [submodule "content"]
 	path = content
 	url = https://github.com/totto2727-org/blog-content.git
+[submodule "public/assets"]
+	path = public/assets
+	url = https://github.com/totto2727-org/blog-assets.git
