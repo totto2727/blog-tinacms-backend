@@ -9,6 +9,9 @@
 		"start": "next start",
 		"lint": "biome check --apply-unsafe ."
 	},
+	"engines": {
+		"node": "^20.0.0"
+	},
 	"type": "module",
 	"devDependencies": {
 		"@biomejs/biome": "^1.7.3",
