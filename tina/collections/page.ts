@@ -5,9 +5,6 @@ export const PageCollection: Collection = {
   label: "Page",
   path: "content/pages",
   format: "md",
-  ui: {
-    router: () => "/",
-  },
   fields: [
     {
       type: "string",
