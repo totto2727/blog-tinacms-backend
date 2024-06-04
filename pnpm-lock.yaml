@@ -12,8 +12,8 @@ importers:
         specifier: ^1.5.34
         version: 1.5.45(@babel/core@7.24.6)(@babel/template@7.24.6)(@types/node@20.12.13)(@types/react-dom@18.2.4)(@types/react@18.2.7)(encoding@0.1.13)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(rollup@3.29.4)
       '@tinacms/datalayer':
-        specifier: ^1.2.29
-        version: 1.2.34(react@18.2.0)
+        specifier: ^1.2.35
+        version: 1.2.35(react@18.2.0)
       next:
         specifier: ^14.0.3
         version: 14.2.3(@babel/core@7.24.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -33,8 +33,8 @@ importers:
         specifier: ^1.0.1
         version: 1.0.7(next-auth@4.24.7(next@14.2.3(@babel/core@7.24.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(next@14.2.3(@babel/core@7.24.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(tinacms@1.6.3(@babel/core@7.24.6)(@babel/template@7.24.6)(@types/react-dom@18.2.4)(@types/react@18.2.7)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(yup@0.32.11)
       tinacms-gitprovider-github:
-        specifier: ^1.0.0
-        version: 1.0.5(@tinacms/datalayer@1.2.34(react@18.2.0))(encoding@0.1.13)
+        specifier: ^1.0.6
+        version: 1.0.6(@tinacms/datalayer@1.2.35(react@18.2.0))(encoding@0.1.13)
       typescript:
         specifier: 5.0.4
         version: 5.0.4
@@ -1480,11 +1480,20 @@ packages:
   '@tinacms/datalayer@1.2.34':
     resolution: {integrity: sha512-I2WxY5VpXKSWZa0pvU37C3XMHpCZLacWHwU23oZqlFNeLV7h7z3IZFn7DmalgS4N0UKbfq3PDs+qzDlYkI79jg==}
 
+  '@tinacms/datalayer@1.2.35':
+    resolution: {integrity: sha512-xq06Loy2Tk7DIvW5/ezIcpRmlNQsRM3VWRTA3BWLtK/4mEt19161N4346pdVkVZSZoHne7X33EIgRo120kqFzg==}
+
   '@tinacms/graphql@1.4.34':
     resolution: {integrity: sha512-KQaICxVSFktC0O1iLa55TvLGtGhvjyLJ4W7BGvhDeIQE7pf8i5AEmXLytnbOckKehsRjAmAhvHUhIotvbncJ6g==}
 
+  '@tinacms/graphql@1.4.35':
+    resolution: {integrity: sha512-dUl+888E2hL+BJMtNDLN6EkH/ckqJw/zhOgwK62lzoGhfX5qo8ed3q2KfU9mF0WyhBoeoAA08fmDNmYyaNgVrA==}
+
   '@tinacms/mdx@1.3.24':
     resolution: {integrity: sha512-jvM16Dpu917SS1pRLG67rqnaGicoNqcvQA+RhI+exylYlULqXSGb3FVgWsSAjUORoYom20oFbhB0Q9hGXjBWtQ==}
+
+  '@tinacms/mdx@1.3.25':
+    resolution: {integrity: sha512-KtOLhNIJwWYjjGKlWCp6FvD4RuluJhJu3wMe2nmeCBnBm/bZrxCqxXOX+MXMVxPdPlv+cybPsv6r5XaOxC7dHg==}
 
   '@tinacms/metrics@1.0.2':
     resolution: {integrity: sha512-PoXdZDXi3C4GqnPoTAEQWfKR1XxocOzTBje8dpTxTQ2J9WIeSUXKg8Gd1kNUVgW4XIZH6vtWqhqr1Ir8/O9M8w==}
@@ -1493,6 +1502,12 @@ packages:
 
   '@tinacms/schema-tools@1.4.15':
     resolution: {integrity: sha512-fVeYpxKTRdf7mc4+BDj0HmEQ2Pi+iapXFj0QIdlIvj5TmHsQELt8rTkpiwbUELj07Un5iD/+dYIrwZWbIrPoBw==}
+    peerDependencies:
+      react: '>=16.14.0'
+      yup: ^0.32.0
+
+  '@tinacms/schema-tools@1.4.16':
+    resolution: {integrity: sha512-GNXSPG7oc9FAr0dZtautRJsmeOmhDyws0NZQDAUGIcAZ3mXlNcdGsdxC0AmC6U4xdCha1AF87VU7BrlsMgHEKg==}
     peerDependencies:
       react: '>=16.14.0'
       yup: ^0.32.0
@@ -4554,10 +4569,10 @@ packages:
       react-dom: ^17.0.2 || ^18
       tinacms: 1.5.30
 
-  tinacms-gitprovider-github@1.0.5:
-    resolution: {integrity: sha512-6AkWfWxsLECvF6XEmUenArpmQMSGcdl+dQAtdC1+4I2v3R1crH4JTXWBw2a9JM/HVcT3ATbrYm01Bym++QejSw==}
+  tinacms-gitprovider-github@1.0.6:
+    resolution: {integrity: sha512-tBzCbF96+p8KABAKn9qGhetwPG67MkJLcjddH5BpMrmR/cbH6Abela7OFKClwO07ZGMpaqy/v5bhzgXkYKUAjg==}
     peerDependencies:
-      '@tinacms/datalayer': 1.2.34
+      '@tinacms/datalayer': 1.2.35
 
   tinacms@1.6.3:
     resolution: {integrity: sha512-zlSyihY6k1wMEoaKnBb6qDfUr7E9eAhwJfK+u96ITVVq+qFbkNgBV/poINyjuURw1ulou8pYNyUabXt+EwEiZw==}
@@ -5761,12 +5776,12 @@ snapshots:
     dependencies:
       '@graphql-tools/utils': 9.2.1(graphql@15.8.0)
       graphql: 15.8.0
-      tslib: 2.4.1
+      tslib: 2.6.2
 
   '@graphql-tools/optimize@1.4.0(graphql@15.8.0)':
     dependencies:
       graphql: 15.8.0
-      tslib: 2.4.1
+      tslib: 2.6.2
 
   '@graphql-tools/optimize@2.0.0(graphql@15.8.0)':
     dependencies:
@@ -5778,7 +5793,7 @@ snapshots:
       '@ardatan/relay-compiler': 12.0.0(encoding@0.1.13)(graphql@15.8.0)
       '@graphql-tools/utils': 9.2.1(graphql@15.8.0)
       graphql: 15.8.0
-      tslib: 2.4.1
+      tslib: 2.6.2
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -5812,7 +5827,7 @@ snapshots:
   '@graphql-tools/utils@8.13.1(graphql@15.8.0)':
     dependencies:
       graphql: 15.8.0
-      tslib: 2.4.1
+      tslib: 2.6.2
 
   '@graphql-tools/utils@9.2.1(graphql@15.8.0)':
     dependencies:
@@ -7112,6 +7127,13 @@ snapshots:
       - react
       - supports-color
 
+  '@tinacms/datalayer@1.2.35(react@18.2.0)':
+    dependencies:
+      '@tinacms/graphql': 1.4.35(react@18.2.0)
+    transitivePeerDependencies:
+      - react
+      - supports-color
+
   '@tinacms/graphql@1.4.34(react@17.0.2)':
     dependencies:
       '@iarna/toml': 2.2.5
@@ -7149,6 +7171,38 @@ snapshots:
       '@iarna/toml': 2.2.5
       '@tinacms/mdx': 1.3.24(react@18.2.0)(yup@0.32.11)
       '@tinacms/schema-tools': 1.4.15(react@18.2.0)(yup@0.32.11)
+      abstract-level: 1.0.4
+      body-parser: 1.20.2
+      cors: 2.8.5
+      dataloader: 2.2.2
+      date-fns: 2.30.0
+      encoding-down: 7.1.0
+      estree-walker: 3.0.3
+      fast-glob: 3.3.2
+      fs-extra: 9.1.0
+      glob-parent: 6.0.2
+      graphql: 15.8.0
+      gray-matter: 4.0.3
+      isomorphic-git: 1.25.10
+      js-sha1: 0.6.0
+      js-yaml: 3.14.1
+      jsonpath-plus: 6.0.1
+      lodash: 4.17.21
+      many-level: 2.0.0
+      micromatch: 4.0.5
+      normalize-path: 3.0.0
+      readable-stream: 4.5.2
+      scmp: 2.1.0
+      yup: 0.32.11
+    transitivePeerDependencies:
+      - react
+      - supports-color
+
+  '@tinacms/graphql@1.4.35(react@18.2.0)':
+    dependencies:
+      '@iarna/toml': 2.2.5
+      '@tinacms/mdx': 1.3.25(react@18.2.0)(yup@0.32.11)
+      '@tinacms/schema-tools': 1.4.16(react@18.2.0)(yup@0.32.11)
       abstract-level: 1.0.4
       body-parser: 1.20.2
       cors: 2.8.5
@@ -7250,6 +7304,43 @@ snapshots:
       - supports-color
       - yup
 
+  '@tinacms/mdx@1.3.25(react@18.2.0)(yup@0.32.11)':
+    dependencies:
+      '@tinacms/schema-tools': 1.4.16(react@18.2.0)(yup@0.32.11)
+      acorn: 8.8.2
+      ccount: 2.0.1
+      estree-util-is-identifier-name: 2.1.0
+      lodash-es: 4.17.21
+      mdast-util-compact: 4.1.1
+      mdast-util-directive: 2.2.4
+      mdast-util-from-markdown: 1.3.0
+      mdast-util-gfm: 2.0.2
+      mdast-util-mdx: 2.0.1
+      mdast-util-mdx-jsx: 2.1.2
+      mdast-util-to-markdown: 1.5.0
+      micromark-extension-gfm: 2.0.3
+      micromark-factory-mdx-expression: 1.0.7
+      micromark-factory-space: 1.0.0
+      micromark-factory-whitespace: 1.0.0
+      micromark-util-character: 1.1.0
+      micromark-util-symbol: 1.0.1
+      micromark-util-types: 1.0.2
+      parse-entities: 4.0.1
+      prettier: 2.8.8
+      remark: 14.0.2
+      remark-gfm: 2.0.0
+      remark-mdx: 2.3.0
+      stringify-entities: 4.0.3
+      unist-util-source: 4.0.2
+      unist-util-stringify-position: 3.0.3
+      unist-util-visit: 4.1.2
+      uvu: 0.5.6
+      vfile-message: 3.1.4
+    transitivePeerDependencies:
+      - react
+      - supports-color
+      - yup
+
   '@tinacms/metrics@1.0.2(encoding@0.1.13)(fs-extra@9.1.0)':
     dependencies:
       fs-extra: 9.1.0
@@ -7266,6 +7357,14 @@ snapshots:
       zod: 3.23.8
 
   '@tinacms/schema-tools@1.4.15(react@18.2.0)(yup@0.32.11)':
+    dependencies:
+      picomatch-browser: 2.2.6
+      react: 18.2.0
+      url-pattern: 1.0.3
+      yup: 0.32.11
+      zod: 3.23.8
+
+  '@tinacms/schema-tools@1.4.16(react@18.2.0)(yup@0.32.11)':
     dependencies:
       picomatch-browser: 2.2.6
       react: 18.2.0
@@ -12880,10 +12979,10 @@ snapshots:
     transitivePeerDependencies:
       - yup
 
-  tinacms-gitprovider-github@1.0.5(@tinacms/datalayer@1.2.34(react@18.2.0))(encoding@0.1.13):
+  tinacms-gitprovider-github@1.0.6(@tinacms/datalayer@1.2.35(react@18.2.0))(encoding@0.1.13):
     dependencies:
       '@octokit/rest': 19.0.13(encoding@0.1.13)
-      '@tinacms/datalayer': 1.2.34(react@18.2.0)
+      '@tinacms/datalayer': 1.2.35(react@18.2.0)
       js-base64: 3.7.7
     transitivePeerDependencies:
       - encoding
